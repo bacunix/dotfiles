@@ -18,9 +18,19 @@ vim.o.tabstop = 4 -- A TAB character looks like 4 spaces
 vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
 vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
-vim.opt.colorcolumn = "80"
 vim.opt.ruler = true
-vim.opt.cursorline = true
+vim.schedule(function()
+  vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#ffffff" })
+  vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#ead84e" })
+    vim.api.nvim_set_hl(0, "BufferLineBackground", { bg = "NONE", fg = "NONE", force = true })
+    vim.api.nvim_set_hl(0, "BufferLineFill", { bg = "NONE", force = true })
+    vim.api.nvim_set_hl(0, "BufferLineTab", { bg = "NONE", force = true })
+    -- Fix cả phần tab đang active
+    vim.api.nvim_set_hl(0, "BufferLineTabSelected", { bg = "NONE", fg = "NONE", bold = true })
+    vim.api.nvim_set_hl(0, "Comment", {fg = "#a6afba"})
+end)
+
+
 opts = function(_, opts)
   local fzf = require("fzf-lua")
   local config = fzf.config
