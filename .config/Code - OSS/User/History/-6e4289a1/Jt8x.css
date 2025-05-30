@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+
+body > div {
+    margin: auto;
+}
+
+.btn {
+    background-color: transparent;
+}

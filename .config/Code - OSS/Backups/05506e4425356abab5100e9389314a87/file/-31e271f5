@@ -1,0 +1,19 @@
+file:///home/bacchimcho/button_project/style.css {"mtime":1748338887437,"ctime":1748320345595,"size":125,"etag":"3ea7dfa2j41","orphaned":false,"typeId":""}
+body {
+    height: 100vh;
+    display: flex;
+}
+
+body > div {
+    margin: auto;
+}
+
+.btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 12px 48xp;
+    cursor: pointer;
+}
+
+.btn--success 

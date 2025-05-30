@@ -1,0 +1,1 @@
+2025-05-27 19:31:21.411 [error] Failed to set sticky bit on /tmp/bacchimcho-code-oss-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/bacchimcho-code-oss-zsh'

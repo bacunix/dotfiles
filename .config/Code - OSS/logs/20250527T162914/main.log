@@ -1,0 +1,5 @@
+2025-05-27 16:29:14.559 [info] update#setState disabled
+2025-05-27 16:29:14.563 [info] update#ctor - updates are disabled as there is no update URL
+2025-05-27 16:30:24.715 [info] Extension host with pid 1650 exited with code: 0, signal: unknown.
+2025-05-27 16:37:59.527 [error] CodeWindow: failed to load (reason: <unknown>, code: -3)
+2025-05-27 16:44:34.748 [info] Extension host with pid 1765 exited with code: 0, signal: unknown.
