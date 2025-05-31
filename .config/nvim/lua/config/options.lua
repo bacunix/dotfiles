@@ -20,15 +20,13 @@ vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 vim.opt.ruler = true
 vim.schedule(function()
-  vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#ffffff" })
-  vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#ead84e" })
-    vim.api.nvim_set_hl(0, "BufferLineBackground", { bg = "NONE", fg = "NONE", force = true })
-    vim.api.nvim_set_hl(0, "BufferLineFill", { bg = "NONE", force = true })
-    vim.api.nvim_set_hl(0, "BufferLineTab", { bg = "NONE", force = true })
-    -- Fix cả phần tab đang active
-    vim.api.nvim_set_hl(0, "BufferLineTabSelected", { bg = "NONE", fg = "NONE", bold = true })
+    vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#ffffff" })
+    vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#ead84e" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     vim.api.nvim_set_hl(0, "Comment", {fg = "#a6afba"})
 end)
+
 
 
 opts = function(_, opts)

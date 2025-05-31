@@ -17,12 +17,6 @@ return {
 				"FzfLuaPreviewTitle",
                 'StatusLine', 
                 'StatusLineNC',
-                'EndOfBuffer',
-                "BufferLineBackground", -- Bufferline
-                "BufferLineTab",        -- Tab
-                "BufferLineFill",       -- Phần fill
-                "NormalFloat",          -- Cửa sổ float
-                "NvimTreeNormal",       -- File explorer
             },
 		})
 		-- require("transparent").clear_prefix("NeoTree")
@@ -38,7 +32,8 @@ return {
         require('transparent').clear_prefix('BufferLine')
 
 		vim.cmd("highlight Normal guibg=NONE")
-        
+        vim.cmd("highlight BufferLine guibg=NONE") 
 		vim.cmd("highlight NormalNC guibg=NONE")
+		vim.cmd("highlight CursorLine guibg=NONE")
 	end,
 }

@@ -12,4 +12,5 @@ return {
   { "williamboman/mason-lspconfig.nvim", enabled = false },
   {"saghen/blink.cmp", enabled  = false},
   -- {  "nvim-lualine/lualine.nvim",enabled = false,}
+  {"akinsho/bufferline.nvim", enabled = false},
 }
